@@ -1,0 +1,297 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.pad {
+  padding: 60px 0; }
+
+.no-pad {
+  padding: 0; }
+
+.left {
+  float: left; }
+
+/** css header **/
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 15px 20px;
+  z-index: 10; }
+  .header-content {
+    text-align: right; }
+    .header-content__title {
+      display: inline-block;
+      letter-spacing: 3px; }
+
+.nav-bar {
+  position: fixed;
+  display: none;
+  z-index: 20;
+  background-color: #21b2a6;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  width: 60%; }
+  .nav-bar__close {
+    margin-bottom: 20px; }
+  .nav-bar ul {
+    padding-top: 10px;
+    padding-right: 10px;
+    text-align: left;
+    list-style: none; }
+    .nav-bar ul li {
+      cursor: pointer;
+      letter-spacing: 3px; }
+    .nav-bar ul .line::before {
+      margin: 3vh 0;
+      display: block;
+      content: " ";
+      width: 80%;
+      height: 3px;
+      background-color: #1d9c92; }
+
+.overlay {
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(43, 52, 61, 0.6);
+  z-index: 15;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; }
+
+@media (min-width: 0) {
+  #titleMenu, #titlePuppy {
+    visibility: hidden; } }
+@media (min-width: 768px) {
+  .nav-bar {
+    width: 30%; }
+
+  #titleMenu {
+    visibility: visible; } }
+/** css header **/
+.cover {
+  position: relative;
+  background-image: url("../assets/images/pic05.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: none; }
+  .cover-content {
+    position: absolute;
+    text-align: center;
+    letter-spacing: 5px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(12, 12, 12, 0.6); }
+    .cover-content__title {
+      margin-top: 30vh;
+      letter-spacing: 10px;
+      font-weight: 800; }
+      .cover-content__title::before, .cover-content__title::after {
+        margin: 3vh auto;
+        display: block;
+        content: " ";
+        width: 80%;
+        height: 3px;
+        background-color: white; }
+    .cover-content__title2 {
+      text-transform: uppercase;
+      font-size: 24px;
+      margin-top: 25vh;
+      margin-bottom: 30px;
+      letter-spacing: 10px;
+      font-weight: 800; }
+    .cover-content__subtitle {
+      font-size: 20px;
+      font-weight: 300;
+      white-space: pre-line; }
+    .cover-content__button {
+      background-color: #ed4933;
+      padding: 10px 30px;
+      margin-top: 40px;
+      border: 0;
+      border-radius: 3px;
+      letter-spacing: 3px; }
+    .cover-content__button2 {
+      background-color: #ed4933;
+      padding: 10px 30px;
+      margin-top: 7vh;
+      border: 0;
+      border-radius: 3px;
+      letter-spacing: 3px;
+      width: 100%; }
+    .cover-content__text {
+      font-weight: 300;
+      letter-spacing: 3px;
+      margin-top: 100px;
+      margin-bottom: 20px; }
+    .cover-content__text2 {
+      font-weight: 300;
+      letter-spacing: 3px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      border: 2px solid white;
+      border-radius: 3px;
+      padding: 10px 30px; }
+    .cover-content--small {
+      position: absolute;
+      text-align: center;
+      letter-spacing: 5px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: rgba(12, 12, 12, 0.7); }
+
+@media (min-width: 768px) {
+  .cover {
+    background-image: url("../assets/images/banner.jpg"); }
+    .cover-content__title::before, .cover-content__title::after {
+      width: 50%; }
+    .cover-content__button2 {
+      margin-top: 25vh; } }
+/** css section **/
+.section {
+  text-align: center;
+  padding-top: 8%; }
+  .section__title {
+    font-weight: 800;
+    letter-spacing: 5px;
+    font-size: 24px;
+    white-space: pre-line;
+    line-height: 50px; }
+    .section__title::after {
+      margin: 5vh auto;
+      display: block;
+      content: " ";
+      width: 80%;
+      height: 3px; }
+  .section__text {
+    width: 80%;
+    margin: auto;
+    font-weight: 300;
+    letter-spacing: 2px; }
+  .section__image {
+    padding: 8% 0; }
+    .section__image img:nth-child(2) {
+      padding: 0 5%; }
+  .section-content {
+    padding: 10%;
+    height: 300px; }
+    .section-content__title {
+      font-weight: 800;
+      letter-spacing: 5px;
+      font-size: 24px;
+      white-space: pre-line;
+      line-height: 50px; }
+    .section-content__text {
+      margin: auto;
+      padding-top: 30px;
+      font-weight: 300;
+      letter-spacing: 2px; }
+
+/** section color jade **/
+.jade {
+  background-color: #21b2a6; }
+
+.jade-line::after {
+  background-color: #1d9c92; }
+
+/** section color purple **/
+.purple {
+  background-color: #505393; }
+
+.purple-line::after {
+  background-color: #474a82; }
+
+/** css section-dark **/
+.section-dark .row:nth-child(1) {
+  background-color: #2b3443; }
+.section-dark .row:nth-child(2) {
+  background-color: #272f3d; }
+.section-dark .row:nth-child(3) {
+  background-color: #232a37; }
+.section-dark img {
+  max-width: 100%;
+  height: auto; }
+.section-dark__title {
+  width: 80%;
+  margin: auto;
+  padding-top: 8%;
+  font-weight: 800;
+  letter-spacing: 5px;
+  font-size: 24px;
+  white-space: pre-line;
+  line-height: 50px;
+  text-transform: uppercase; }
+.section-dark__text {
+  width: 80%;
+  margin: 20px auto;
+  margin-bottom: 0;
+  font-weight: 300;
+  letter-spacing: 2px; }
+.section-dark__image--p1 {
+  background-image: url("../assets/images/pic01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; }
+.section-dark__image--p2 {
+  background-image: url("../assets/images/pic02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; }
+.section-dark__image--p3 {
+  background-image: url("../assets/images/pic03.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; }
+
+.purple1 {
+  background-color: #4e5190; }
+
+.purple2 {
+  background-color: #4b4d89; }
+
+.purple3 {
+  background-color: #494c86; }
+
+.purple4 {
+  background-color: #45487f; }
+
+.purple5 {
+  background-color: #424479; }
+
+.purple6 {
+  background-color: #404275; }
+
+.icons {
+  padding: 8%; }
+  .icons i {
+    color: grey;
+    padding: 10px; }
+
+/*# sourceMappingURL=main.css.map */

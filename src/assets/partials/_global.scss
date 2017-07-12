@@ -1,0 +1,28 @@
+*{
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+
+.align-left{
+  text-align: left;
+}
+
+.align-right{
+  text-align: right;
+}
+
+.pad{
+  padding: 60px 0;
+}
+
+.no-pad{
+  padding: 0;
+}
+
+.left{
+  float: left;
+}

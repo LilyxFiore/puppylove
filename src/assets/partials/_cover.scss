@@ -1,0 +1,99 @@
+/** css header **/
+.cover{
+  position: relative;
+  background-image: url("../assets/images/pic05.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: none;
+  &-content{
+    position: absolute;
+    text-align: center;
+    letter-spacing: 5px;
+    top: 0; bottom: 0; right: 0; left: 0;
+    background-color: rgba(12,12,12,0.6);
+    &__title{
+      margin-top: 30vh;
+      letter-spacing: 10px;
+      font-weight: $bold;
+      &::before, &::after{
+        margin: 3vh auto;
+        display: block;
+        content: " ";
+        width: 80%;
+        height: 3px;
+        background-color: white;
+      }
+    }
+    &__title2{
+      text-transform: uppercase;
+      font-size: 24px;
+      margin-top: 25vh;
+      margin-bottom: 30px;
+      letter-spacing: 10px;
+      font-weight: $bold;
+    }
+    &__subtitle{
+      font-size: 20px;
+      font-weight: $light;
+      white-space: pre-line;
+    }
+    &__button{
+      background-color: $red;
+      padding: 10px 30px;
+      margin-top: 40px;
+      border: 0;
+      border-radius: 3px;
+      letter-spacing: 3px;
+    }
+    &__button2{
+      background-color: $red;
+      padding: 10px 30px;
+      margin-top: 7vh;
+      border: 0;
+      border-radius: 3px;
+      letter-spacing: 3px;
+      width: 100%;
+    }
+    &__text{
+      font-weight: $light;
+      letter-spacing: 3px;
+      margin-top: 100px;
+      margin-bottom: 20px;
+    }
+    &__text2{
+      font-weight: $light;
+      letter-spacing: 3px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      border: 2px solid white;
+      border-radius: 3px;
+      padding: 10px 30px;
+    }
+    &--small{
+      position: absolute;
+      text-align: center;
+      letter-spacing: 5px;
+      bottom: 0; right: 0; left: 0;
+      background-color: rgba(12,12,12,0.7);
+    }
+  }
+}
+
+
+@media (min-width: 768px){
+  .cover {
+    background-image: url("../assets/images/banner.jpg");
+    &-content {
+      &__title {
+        &::before, &::after {
+          width: 50%;
+        }
+      }
+      &__button2{
+        margin-top: 25vh;
+      }
+    }
+  }
+}

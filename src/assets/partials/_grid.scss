@@ -1,0 +1,33 @@
+/** css grid **/
+$columns : 12;
+$breakpoints : (xs : 0, sm : 768px, md : 992px, lg : 1200px );
+
+@mixin column($media, $min-width){
+  @media (min-width:$min-width){
+    @for $i from 1 through $columns {
+      .col-#{$media}#{$i} {
+        width: (100%/$columns)*$i;
+      }
+    }
+  }
+}
+
+@each $name, $width in $breakpoints {
+  @include column($name, $width);
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container{
+  position: relative;
+  margin: 40px auto;
+  width: 80%;
+}
