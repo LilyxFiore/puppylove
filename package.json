@@ -1,0 +1,26 @@
+{
+  "name": "puppylove",
+  "version": "1.0.0",
+  "description": "Pagina web de mascotas caninas",
+  "main": "index.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LilyxFiore/puppylove.git"
+  },
+  "keywords": [
+    "puppy",
+    "love"
+  ],
+  "author": "Liliana Peña",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LilyxFiore/puppylove/issues"
+  },
+  "homepage": "https://github.com/LilyxFiore/puppylove#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
